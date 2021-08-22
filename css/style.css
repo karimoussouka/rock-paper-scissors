@@ -66,7 +66,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 70px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -146,4 +146,48 @@ body {
 .newGame:hover {
     background-color: bisque;
     transform: translate3d(0px, -2px, 0px);
+}
+
+@media only screen and (max-width: 767px) {
+    .scoreboard {
+        width: 85%;
+    }
+    .referee {
+        margin: 0 auto;
+    }
+    .referee h1 {
+        font-size: 34px;
+    }
+    .contest {
+        width: 100%;
+    }
+    .contest img {
+        width: 150px;
+        height: 150px;
+    }
+    .computerHand h1,
+    .userHand h1 {
+        font-size: 16px;
+    }
+    .hands {
+        width: 80%;
+        height: 80%;
+        margin-top: 40px;
+    }
+    .hands img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .hands img {
+        width: 150px;
+        margin-top: 70px;
+    }
+    .rock img {
+        margin-top: -10px;
+    }
+    .hands {
+        margin-top: 10px;
+    }
 }
